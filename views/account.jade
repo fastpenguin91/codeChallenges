@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1.headLine Your Account!
+
+  h2 User Information
+  p Email:      #{user.email}
+  p Data:       #{user.data}
+  p Solved Challenges:
+  each challenge, i in solvedChallenges
+    div.challenge #{challenge.title} Difficulty: #{challenge.difficulty}
+    a(href="/challenge/#{challenge.challenge_id}") #{challenge.title}

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1.headLine Log In!
+  if error
+    p ERROR: #{error}
+  form(action="/login" method="post")
+    input(type="hidden", name="_csrf", value=csrfToken)
+    label Email
+    input(type="text" name="email" required=true)
+    br
+    label password
+    input(type="password" name="password", required=true)
+    br
+    button(type="submit") SubmitTheButton

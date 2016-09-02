@@ -1,0 +1,44 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.button {
+  padding: 5px;
+  background-color: green;
+  border-radius: 8px;
+}
+
+.challenge {
+  background-color: #d3d3d3;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.headLine {
+  text-align: center;
+}
+
+
+nav {
+  overflow: hidden;
+  background-color: red;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav > ul > li > a {
+  color: #aaa;
+  background-color: #ff0;
+}
